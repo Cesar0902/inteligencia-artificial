@@ -13,8 +13,9 @@ class Calculadora:
     return self.num1 * self.num2
   
   def dividir(self):
+    if self.num2 == 0:
+      return "No se puede dividir por 0"
     return self.num1 / self.num2
-  
 
 print("Calculadora")
 num1, num2 = map(int, input("Ingrese dos números separados por espacio: ").split())
