@@ -15,6 +15,6 @@ for letra in patron:
     case 'n':
       contraseña += chr(randint(48, 57))
     case 's':
-      contraseña += chr(randint(33, 47))
+      contraseña += chr(choice([randint(33, 47), randint(58, 64), randint(91, 96)]))
 
 print(f"Contraseña generada es: {contraseña}")
