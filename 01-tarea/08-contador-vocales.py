@@ -1,4 +1,5 @@
 def contar_vocales(frase):
+  frase = frase.lower()
   vocales = 'aeiou'
   contador = 0
 
