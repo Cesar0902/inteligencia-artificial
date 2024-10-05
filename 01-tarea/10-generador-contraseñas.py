@@ -1,6 +1,6 @@
 from random import choice, randint, shuffle
 
-def generar_contraseña(longitud):
+def generar_contraseña(longitud: int = 8):
   patron = ['M', 'm', 'n', 's']
   contraseña = ""
 
@@ -26,3 +26,5 @@ while True:
     break
 
 generar_contraseña(longitud)
+
+generar_contraseña() # 8 por default
