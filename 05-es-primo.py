@@ -6,7 +6,14 @@ def es_primo(n):
             return False
     return True
 
-n = int(input("Ingrese un número: "))
+while True:
+    try:
+        n = int(input("Ingrese un número: "))
+        break
+    except ValueError:
+        print("Por favor, ingrese un número válido") 
+
+
 if es_primo(n):
     print(f"{n} es primo")
 
